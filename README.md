@@ -24,7 +24,6 @@ Avec uniquement les départements 53, 61 et 28
 3) Exporter le résultat dans un fichier Excel.
 
 
-
 LOT 2
 •
 Contexte :
