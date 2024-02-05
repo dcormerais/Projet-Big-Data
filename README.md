@@ -1,4 +1,4 @@
-# Projet-Big-Data Fromagerie
+# Projet-Big-Data
 
 Groupe : Chaimae / Mbaye / Christopher / Dorian
 
