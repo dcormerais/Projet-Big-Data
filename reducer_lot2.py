@@ -98,5 +98,5 @@ plt.title('Repartition des villes par rapport a la quantite Avec Hadoop')
 # Enregistrer le diagramme circulaire au format PDF
 plt.savefig('/datavolume1/PieChart01.pdf')
 
-# Afficher le diagramme circulaire
-plt.show()
+# Afficher le diagramme circulaire (dans l'environnement adapté)
+#plt.show()
