@@ -1,5 +1,31 @@
 #!/usr/bin/env python3
-"""reducer_lot1.py"""
+"""reducer_lot1.py
+
+Ce script lit les données du mapper_lot1.py et les agrège en fonction du code CDE.
+Il calcule la quantité totale commandée et le timbre CDE maximum pour chaque code CDE.
+Le résultat est ensuite trié par quantité et timbre CDE et enregistré dans un fichier Excel.
+
+Fonctionnement:
+
+1. Lit les données ligne par ligne depuis l'entrée standard.
+2. Pour chaque ligne:
+   - Découpe la ligne en colonnes en utilisant la tabulation comme séparateur.
+   - Extrait les informations spécifiques des colonnes:
+       - code CDE
+       - ville
+       - timbre CDE
+       - quantité
+       - date
+       - département
+   - Met à jour un dictionnaire `commandes` avec les informations extraites.
+3. Trie le dictionnaire `commandes` par quantité et timbre CDE.
+4. Crée un DataFrame Pandas à partir des données du dictionnaire.
+5. Enregistre le DataFrame dans un fichier Excel nommé `lot1_exo1.xlsx`.
+
+Gestion d'erreurs:
+
+- Si la quantité n'est pas un nombre, la valeur par défaut 0 est utilisée.
+"""
 import sys
 import decimal
 import pandas as pd
@@ -34,9 +60,9 @@ commandes = {}
 for line in sys.stdin:
     process_line(line, commandes)
 
-# Triez le dictionnaire en fonction de la clé "qte"
+# Triez le dictionnaire en fonction de la clé "qte" et "timbrecde" de manière décroissante
 sorted_commandes = sorted(
-    commandes.items(), key=lambda x: (x[1]["qte"], x[1]["timbrecde"]),reverse=True
+    commandes.items(), key=lambda x: (x[1]["qte"], x[1]["timbrecde"]), reverse=True
 )
 
 # Créez un DataFrame à partir des données
@@ -49,3 +75,4 @@ df = pd.DataFrame(mydata, columns=["codcde", "ville", "qte", "timbrecde"])
 
 # Enregistrez le DataFrame dans un fichier Excel
 df.to_excel("/datavolume1/lot1_exo1.xlsx", index=False)
+
