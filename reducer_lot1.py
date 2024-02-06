@@ -48,5 +48,4 @@ for codcde, values in sorted_commandes[:100]:
 df = pd.DataFrame(mydata, columns=["codcde", "ville", "qte", "timbrecde"])
 
 # Enregistrez le DataFrame dans un fichier Excel
-excel_file = "/datavolume1/lot1_exo1.xlsx"
-df.to_excel(excel_file, index=False)
+df.to_excel("/datavolume1/lot1_exo1.xlsx", index=False)
