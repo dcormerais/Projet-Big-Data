@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """reducer_lot1.py"""
 import sys
 import decimal
@@ -36,7 +36,7 @@ for line in sys.stdin:
 
 # Triez le dictionnaire en fonction de la clé "qte"
 sorted_commandes = sorted(
-    commandes.items(), key=lambda x: (x[1]["qte"], x[1]["timbrecde"]), reverse=True
+    commandes.items(), key=lambda x: (x[1]["qte"], x[1]["timbrecde"]),reverse=True
 )
 
 # Créez un DataFrame à partir des données
@@ -48,5 +48,5 @@ for codcde, values in sorted_commandes[:100]:
 df = pd.DataFrame(mydata, columns=["codcde", "ville", "qte", "timbrecde"])
 
 # Enregistrez le DataFrame dans un fichier Excel
-excel_file = "../BigData/lot2_exo2.xlsx"
+excel_file = "/datavolume1/lot1_exo1.xlsx"
 df.to_excel(excel_file, index=False)
