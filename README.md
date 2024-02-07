@@ -45,8 +45,7 @@ LOT 3
 
 (De votre poste local : interroger votre VM LINUX sur le port 9090 (port privé de votre VM => prendre votre endpoint public correspondant)
 
-1)
-Mettre en place une base NoSQL HBASE pour stocker le contenu du fichier CSV afin d’interroger ce Data Warehouse avec des scripts python.
+1)Mettre en place une base NoSQL HBASE pour stocker le contenu du fichier CSV afin d’interroger ce Data Warehouse avec des scripts python.
 •
 La meilleur commande de Nantes de l’année 2020.
 •
@@ -54,8 +53,7 @@ Le nombre total de commandes effectuées entre 2010 et 2015, réparties par ann�
 •
 Le nom, le prénom, le nombre de commande et la somme des quantités d’objets du client qui a eu le plus de frais de timbrecde.
 
-2)
-Créer un programme python (avec Panda) pour créer des graphes en pdf et des tableaux Excel de votre importation dans HBase
+2)Créer un programme python (avec Panda) pour créer des graphes en pdf et des tableaux Excel de votre importation dans HBase
 
 LOT 4
 
