@@ -1,6 +1,6 @@
 # Projet-Big-Data
 
-Groupe : Chaimae / Mbaye / Christopher / Dorian
+Groupe : Chaimae / Mbaye / Christopher / Dorian / Fatima / Christ
 
 
 
