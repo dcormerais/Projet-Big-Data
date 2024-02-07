@@ -54,7 +54,7 @@ Le nombre total de commandes effectuées entre 2010 et 2015, réparties par ann�
 •
 Le nom, le prénom, le nombre de commande et la somme des quantités d’objets du client qui a eu le plus de frais de timbrecde.
 
-3)
+2)
 Créer un programme python (avec Panda) pour créer des graphes en pdf et des tableaux Excel de votre importation dans HBase
 
 LOT 4
